@@ -7,7 +7,7 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import { globalStyles } from "../styles/global";
+import { globalStyles } from "../styles/globalStyles";
 
 type ScrollableProps = {
   children: React.ReactNode;

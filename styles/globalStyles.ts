@@ -27,4 +27,21 @@ export const globalStyles = StyleSheet.create({
   whiteText: {
     color: "#fcf4e6",
   },
+
+  caption: {
+    fontSize: 20,
+    fontWeight: "heavy",
+  },
+
+  paragraph: {
+    fontSize: 15,
+  },
+
+  textFieldContainer: {
+    padding: 15,
+    gap: 5,
+    backgroundColor: "#eae2d5",
+    borderRadius: 5,
+    width: 300,
+  },
 });

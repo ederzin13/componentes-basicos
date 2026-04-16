@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import React from "react";
-import { globalStyles } from "../styles/global";
+import { globalStyles } from "../styles/globalStyles";
 import ButtonNativo from "./ButtonNativo";
 
 export default function Title() {
