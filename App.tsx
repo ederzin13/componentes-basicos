@@ -1,8 +1,8 @@
 import Scrollable from "./wrappers/Scrollable";
 import Title from "./components/Title";
 import ButtonNativo from "./components/ButtonNativo";
-import ButtonCustom from "./components/ButtonCustom";
 import TextField from "./TextField";
+import CustomButton from "./components/CustomButton";
 import { Text } from "react-native";
 import { globalStyles } from "./styles/globalStyles";
 
@@ -19,7 +19,8 @@ export default function App() {
       </TextField>
       <ButtonNativo isDisabled={false}></ButtonNativo>
       <ButtonNativo isDisabled={true}></ButtonNativo>
-      <ButtonCustom></ButtonCustom>
+      <CustomButton text="Button customizado!"></CustomButton>
+      <CustomButton text="Cor personalizada" color="#676ec3"></CustomButton>
     </Scrollable>
   );
 }

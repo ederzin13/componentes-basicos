@@ -15,11 +15,10 @@ export const globalStyles = StyleSheet.create({
     fontWeight: "bold",
   },
 
-  buttonCustom: {
+  customButton: {
+    padding: 15,
     height: 50,
-    width: 90,
     borderRadius: 10,
-    backgroundColor: "#5d513b",
     alignItems: "center",
     justifyContent: "center",
   },
