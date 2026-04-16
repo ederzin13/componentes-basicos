@@ -1,6 +1,5 @@
 import {
   View,
-  Text,
   ScrollView,
   StatusBar,
   StyleSheet,
@@ -8,6 +7,7 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import { globalStyles } from "../styles/global";
 
 type ScrollableProps = {
   children: React.ReactNode;
@@ -26,13 +26,13 @@ export default function Scrollable({ children }: ScrollableProps) {
 
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={globalStyles.container}>
         <ScrollView
           refreshControl={
             <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
           }
         >
-          {children}
+          <View style={globalStyles.container}>{children}</View>
         </ScrollView>
       </SafeAreaView>
       <StatusBar barStyle="dark-content"></StatusBar>
@@ -40,10 +40,4 @@ export default function Scrollable({ children }: ScrollableProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fcf4e6",
-    alignItems: "center",
-  },
-});
+const styles = StyleSheet.create({});
