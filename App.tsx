@@ -1,8 +1,8 @@
-import Scrollable from "./wrappers/Scrollable";
+import Scrollable from "./components/Wrappers/Scrollable";
 import Title from "./components/Title";
-import ButtonNativo from "./components/ButtonNativo";
-import TextField from "./TextField";
-import CustomButton from "./components/CustomButton";
+import ButtonNativo from "./components/Buttons/ButtonNativo";
+import TextField from "./components/TextField";
+import CustomButton from "./components/Buttons/CustomButton";
 import { Text } from "react-native";
 import { globalStyles } from "./styles/globalStyles";
 

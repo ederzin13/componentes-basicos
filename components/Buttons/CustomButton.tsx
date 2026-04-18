@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import React from "react";
-import { globalStyles } from "../styles/globalStyles";
+import { globalStyles } from "../../styles/globalStyles";
 
 type CustomButtonProps = {
   text: string;
