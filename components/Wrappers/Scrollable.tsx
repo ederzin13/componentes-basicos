@@ -4,6 +4,8 @@ import {
   StatusBar,
   StyleSheet,
   RefreshControl,
+  KeyboardAvoidingView,
+  Platform,
 } from "react-native";
 import React, { useState } from "react";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
@@ -27,13 +29,18 @@ export default function Scrollable({ children }: ScrollableProps) {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={globalStyles.container}>
-        <ScrollView
-          refreshControl={
-            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
-          }
+        <KeyboardAvoidingView
+          style={{ flex: 1 }}
+          behavior={Platform.OS === "ios" ? "padding" : "height"}
         >
-          <View style={globalStyles.container}>{children}</View>
-        </ScrollView>
+          <ScrollView
+            refreshControl={
+              <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+            }
+          >
+            <View style={globalStyles.container}>{children}</View>
+          </ScrollView>
+        </KeyboardAvoidingView>
       </SafeAreaView>
       <StatusBar barStyle="dark-content"></StatusBar>
     </SafeAreaProvider>

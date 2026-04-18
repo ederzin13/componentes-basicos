@@ -43,4 +43,15 @@ export const globalStyles = StyleSheet.create({
     borderRadius: 5,
     width: 300,
   },
+
+  //input
+  inputContainer: {
+    height: 50,
+    width: 200,
+    borderWidth: 1,
+    borderColor: "#b0b0b0",
+    borderRadius: 5,
+    justifyContent: "center",
+    marginBottom: 10,
+  },
 });

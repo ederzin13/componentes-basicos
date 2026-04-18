@@ -5,6 +5,7 @@ import TextField from "./components/TextField";
 import CustomButton from "./components/Buttons/CustomButton";
 import { Text } from "react-native";
 import { globalStyles } from "./styles/globalStyles";
+import Input from "./components/Form/Input";
 
 export default function App() {
   return (
@@ -21,6 +22,30 @@ export default function App() {
       <ButtonNativo isDisabled={true}></ButtonNativo>
       <CustomButton text="Button customizado!"></CustomButton>
       <CustomButton text="Cor personalizada" color="#676ec3"></CustomButton>
+      <TextField>
+        <Input></Input>
+      </TextField>
+      <TextField>
+        <Text style={globalStyles.caption}>Alguns botões simples:</Text>
+        <Text style={globalStyles.paragraph}>
+          É possível utilizar botões nativos (bastante limitados), ou criar
+          botões personalizados utilizando o "Pressable"
+        </Text>
+      </TextField>
+      <TextField>
+        <Text style={globalStyles.caption}>Alguns botões simples:</Text>
+        <Text style={globalStyles.paragraph}>
+          É possível utilizar botões nativos (bastante limitados), ou criar
+          botões personalizados utilizando o "Pressable"
+        </Text>
+      </TextField>
+      <TextField>
+        <Text style={globalStyles.caption}>Alguns botões simples:</Text>
+        <Text style={globalStyles.paragraph}>
+          É possível utilizar botões nativos (bastante limitados), ou criar
+          botões personalizados utilizando o "Pressable"
+        </Text>
+      </TextField>
     </Scrollable>
   );
 }
