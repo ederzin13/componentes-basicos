@@ -13,7 +13,7 @@ export default function Inputs() {
 					Podemos criar caixas de texto com propósitos e comportamentos
 					específicos
 				</Text>
-				<Input></Input>
+				<Input label="Label" placeholder="Placeholder"></Input>
 			</TextField>
 		</View>
 	);
