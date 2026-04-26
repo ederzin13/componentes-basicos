@@ -1,31 +1,41 @@
 import {
-  Alert,
-  ColorValue,
-  Pressable,
-  Text,
-  TouchableOpacity,
+	Alert,
+	Pressable,
+	StyleSheet,
+	Text,
+	TouchableOpacity,
 } from "react-native";
 import React from "react";
 import { globalStyles } from "../../styles/globalStyles";
 
 type CustomButtonProps = {
-  text: string;
-  color?: string;
+	text: string;
+	color?: string;
 };
 
 export default function CustomButton({ text, color }: CustomButtonProps) {
-  return (
-    <TouchableOpacity
-      style={[
-        globalStyles.customButton,
-        { backgroundColor: color ? color : "#5d513b" },
-      ]}
-    >
-      <Pressable
-        onPress={() => Alert.alert("No lugar do Button, use o Pressable!")}
-      >
-        <Text style={globalStyles.whiteText}>{text}</Text>
-      </Pressable>
-    </TouchableOpacity>
-  );
+	return (
+		<TouchableOpacity
+			style={[
+				styles.customButton,
+				{ backgroundColor: color ? color : "#5d513b" },
+			]}
+		>
+			<Pressable
+				onPress={() => Alert.alert("No lugar do Button, use o Pressable!")}
+			>
+				<Text style={globalStyles.whiteText}>{text}</Text>
+			</Pressable>
+		</TouchableOpacity>
+	);
 }
+
+const styles = StyleSheet.create({
+	customButton: {
+		padding: 15,
+		height: 50,
+		borderRadius: 10,
+		alignItems: "center",
+		justifyContent: "center",
+	},
+});
