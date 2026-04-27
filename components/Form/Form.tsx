@@ -3,6 +3,7 @@ import React from "react";
 import Input from "./Input";
 import CustomButton from "../Buttons/CustomButton";
 import ToggleSwitch from "./ToggleSwitch";
+import TextField from "../TextField";
 
 export default function Form() {
   return (
@@ -13,6 +14,14 @@ export default function Form() {
       <ToggleSwitch></ToggleSwitch>
       <CustomButton text="Enviar" color="#3f3f3f"></CustomButton>
     </View>
+
+    // <TextField center color="white">
+    //   <Text style={styles.formTitle}>Preencha o formulário</Text>
+    //   <Input placeholder="Patrick Star" label="Nome completo"></Input>
+    //   <Input placeholder="Fenda do biquíni" label="Cidade"></Input>
+    //   <ToggleSwitch></ToggleSwitch>
+    //   <CustomButton text="Enviar" color="#3f3f3f"></CustomButton>
+    // </TextField>
   );
 }
 
